@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  generate-cv:
+    desc: Generate CV PDF using XeLaTeX
+    cmds:
+      - xelatex cv.tex
+    generates:
+      - cv.pdf`

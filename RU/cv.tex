@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% --- Шрифты и поддержка кириллицы ---
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+% Основные шрифты (можешь поменять на свои)
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+% Кириллица для polyglossia
+\newfontfamily\cyrillicfont{Times New Roman}
+\newfontfamily\cyrillicfontsf{Arial}
+\newfontfamily\cyrillicfonttt{Courier New}
+
+% --- Верстка ---
+\usepackage[scale=0.9]{geometry}
+\usepackage{enumitem}
+
+% --- Личные данные ---
+\name{Нурсултан}{Куандык}
+\extrainfo{n.kuandyk1995@gmail.com · +7 747 454 8448 · github.com/lunarnuts}
+\vspace*{-1.0em}
+
+\begin{document}
+\makecvtitle
+\setlength{\hintscolumnwidth}{2.2cm}
+\renewcommand{\subsectionfont}{\normalsize\bfseries}
+\setlength{\parskip}{0.2em}
+\setlength{\parindent}{0pt}
+
+% --- Профессиональное резюме ---
+\section{Коротко обо мне}
+Результативный \textbf{Senior Go Software Engineer} с опытом более 4 лет в проектировании и масштабировании облачных платформ, высокодоступных микросервисов и event-driven систем в финтехе и корпоративном сегменте. Достиг сокращения уязвимостей на \textbf{89\%} (устранены все критические), увеличения покрытия тестами на \textbf{10\%} в кодовой базе объемом более 20k LOC, а также реализации API с нагрузкой 10k+ RPS и \textbf{uptime 99.9\%}. Опыт в согласовании архитектуры между командами, наставничестве и модернизации систем с глубокими знаниями Go, Kubernetes, gRPC, Kafka и PostgreSQL.
+
+% --- Навыки ---
+\section{Ключевые навыки}
+\cvitem{Языки}{Go, JavaScript (Node.js, AngularJS), ABAP}
+\cvitem{Архитектура}{Clean Architecture, Hexagonal, SOLID, DI; Event-driven и распределённые системы}
+\cvitem{Облако/DevOps}{Kubernetes, Docker, AWS, GCP, ArgoCD, GitHub Actions, CI/CD}
+\cvitem{Базы данных}{PostgreSQL, MySQL, MongoDB, Redis; оптимизация запросов, транзакции, пакетная обработка}
+\cvitem{Сообщения/API}{gRPC, Kafka, NATS, REST, OpenAPI 3.0}
+\cvitem{Мониторинг}{Grafana, Loki, Prometheus; инцидент-менеджмент, L3 поддержка}
+
+% --- Опыт работы ---
+\section{Опыт работы}
+
+\cventry{Янв 2025 -- наст. время}{Senior Go Software Engineer}{EPAM}{Астана, Казахстан}{}{
+\begin{itemize}
+  \item Руководил командой из 3 инженеров при модернизации платформы Node/Angular, сократил уязвимости с \textbf{228 (28 критических)} до \textbf{26 (0 критических)}.
+  \item Увеличил автоматическое покрытие тестами на \textbf{10\%} в кодовой базе \textbf{20k+ LOC}.
+  \item Спроектировал и реализовал масштабируемый \textbf{сервис многоуровневых уведомлений} (in-app, email, SMS).
+  \item Создал \textbf{Kubernetes операторов} для стандартизации деплойментов и rollout конфигураций.
+  \item Организовал сессии проектирования между командами для согласования API и архитектурных стандартов.
+  \item Наставлял middle-разработчиков, проводил code review и обучал коллег Go и облачным практикам.
+\end{itemize}}
+
+\cventry{Янв 2024 -- Янв 2025}{Senior Go Software Engineer}{DigitalBizFactory}{Астана, Казахстан}{}{
+\begin{itemize}
+  \item Спроектировал и реализовал \textbf{core banking API} и микросервисы с worker pools и асинхронными планировщиками, обеспечил \textbf{10k RPS при uptime 99.9\%}.
+  \item Внедрил \textbf{gRPC} и \textbf{Kafka} для декуплинга сервисов и потоковой передачи событий; использовал Redis для кэширования и rate-лимитов.
+  \item Оптимизировал PostgreSQL запросы и индексы, снизил p95 latency на критических эндпоинтах на \textbf{60\%}.
+  \item Согласовал SLA совместно с продукт-оунерами и QA.
+\end{itemize}}
+
+\cventry{Янв 2023 -- Янв 2024}{Middle Go Software Engineer}{Airba Group}{Алматы, Казахстан}{}{
+\begin{itemize}
+  \item Разработал безопасные финансовые API; автоматизировал аудит и сократил ручную подготовку отчетности с \textbf{40+ часов/мес} до \textbf{2 часов/мес}.
+  \item Оптимизировал банковские интеграции с пакетной обработкой и реструктуризацией транзакций, снизил время ответа на \textbf{45\%}.
+  \item Работал с кросс-функциональными командами для повышения безопасности данных.
+\end{itemize}}
+
+\cventry{Окт 2021 -- Янв 2023}{Junior $\rightarrow$ Middle Software Engineer}{EPAM}{Астана, Казахстан}{}{
+\begin{itemize}
+  \item Разработал backend API и интеграции с внешними системами для крупного нефтегазового клиента.
+\end{itemize}}
+% --- Образование ---
+\section{Образование}
+\cventry{2012 -- 2017}{Бакалавр Робототехники и Мехатроники}{Nazarbayev University}{Астана}{}{}
+
+\end{document}
