@@ -1,5 +1,5 @@
 % LaTeX CV using moderncv package
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
@@ -21,26 +21,28 @@
 
 % Summary
 \section{Professional Summary}
-Results-driven \textbf{Senior Go Software Engineer} with 4+ years designing and scaling cloud-native platforms, high-availability microservices, and event-driven systems across fintech and enterprise domains. Proven record of reducing vulnerabilities by 89\% (eliminating all critical), boosting automated test coverage by 10\% across 20k+ LOC, and delivering APIs with 10k+ RPS at 99.9\% uptime. Skilled at cross-team design alignment, mentoring juniors, and leading modernization initiatives with deep expertise in Go, Kubernetes, gRPC, Kafka, and PostgreSQL.
+Results-driven \textbf{Senior Go Software Engineer} with 5+ years designing and scaling cloud-native platforms, high-availability microservices and k8s operators, and event-driven systems across fintech and enterprise domains. Proven record of reducing vulnerabilities by 89\% (eliminating all critical), boosting automated test coverage by 36\% across 60k+ LOC, and delivering APIs with 10k+ RPS at 99.9\% uptime. Skilled at cross-team design alignment, mentoring juniors, and leading modernization initiatives with deep expertise in Go, Kubernetes, gRPC, Kafka, and PostgreSQL.
 
 % Core Skills
 \section{Core Skills}
 \cvitem{Languages}{Go, JavaScript (Node.js, AngularJS), ABAP}
 \cvitem{Architecture}{Clean Architecture, Hexagonal, SOLID, DI; Event-driven and distributed systems}
-\cvitem{Cloud/DevOps}{Kubernetes, Docker, AWS, GCP, ArgoCD, GitHub Actions, CI/CD}
+\cvitem{Cloud/DevOps}{Kubernetes, Docker, AWS, GCP, ArgoCD, GitHub Actions, CI/CD, Operator SDK}
 \cvitem{Databases}{PostgreSQL, MySQL, MongoDB, Redis; Query optimization, Transactions, Batching}
 \cvitem{Messaging/APIs}{gRPC, Kafka, NATS, REST, OpenAPI 3.0}
-\cvitem{Observability}{Grafana, Loki, Prometheus; Incident response, L3 support}
+\cvitem{Observability}{Grafana, OpenTelemetry, Cribl, SignalFx, Splunk, Loki, Prometheus; Incident response, L3 support}
 
 % Experience
 \section{Professional Experience}
 
-\cventry{Jan 2025 -- Present}{Senior Go Software Engineer}{EPAM}{Astana, Kazakhstan}{}{
+\cventry{Jan 2025 -- Present}{Senior Go Software Engineer}{EPAM}{Sofia, Bulgaria}{}{
 \begin{itemize}
-  \item Led a team of 3 engineers to modernize a legacy Node/Angular platform, cutting vulnerabilities from \textbf{228 (28 critical)} to \textbf{26 (0 critical)}, significantly improving security posture and compliance.
-  \item Increased automated test coverage by \textbf{10\%} across \textbf{20k+ LOC}, strengthening regression detection and release stability.
-  \item Designed and implemented a scalable \textbf{multi-channel notification service} supporting in-app, email, and SMS fan-out.
-  \item Built a \textbf{Kubernetes operators} to standardize deployments and configuration rollouts, reducing manual ops toils.
+  \item Played a key part in the development of an operator framework for internal use.
+  \item Improved observability by simplifying tech stack using OpenTelemetry collector and splunk(+signalfx)
+  \item Built \textbf{Kubernetes operators} to standardize deployments and configuration rollouts, reducing manual ops toils.
+  \item Led a team of three engineers to modernize a legacy Node/Angular platform, cutting vulnerabilities from \textbf{228 (28 critical)} to \textbf{26 (0 critical)}, significantly improving security posture and compliance.
+  \item Increased automated test coverage by \textbf{36\%} across \textbf{60k+ LOC}, strengthening regression detection and release stability.
+  \item Designed and implemented a scalable \textbf{multichannel notification service} supporting in-app, email, and SMS fan-out.
   \item \textbf{Facilitated design sessions across teams} to align API contracts and architectural standards, improving system interoperability.
   \item Mentored middle developers, conducted code reviews, and trained colleagues on Go and cloud-native best practices.
 \end{itemize}}

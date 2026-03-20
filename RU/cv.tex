@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
@@ -36,27 +36,29 @@
 
 % --- Профессиональное резюме ---
 \section{Коротко обо мне}
-Результативный \textbf{Senior Go Software Engineer} с опытом более 4 лет в проектировании и масштабировании облачных платформ, высокодоступных микросервисов и event-driven систем в финтехе и корпоративном сегменте. Достиг сокращения уязвимостей на \textbf{89\%} (устранены все критические), увеличения покрытия тестами на \textbf{10\%} в кодовой базе объемом более 20k LOC, а также реализации API с нагрузкой 10k+ RPS и \textbf{uptime 99.9\%}. Опыт в согласовании архитектуры между командами, наставничестве и модернизации систем с глубокими знаниями Go, Kubernetes, gRPC, Kafka и PostgreSQL.
+Результативный \textbf{Senior Go Software Engineer} с опытом более 5 лет в проектировании и масштабировании облачных платформ, высокодоступных микросервисов, k8s операторов и event-driven систем в финтехе и корпоративном сегменте. Достиг сокращения уязвимостей на \textbf{89\%} (устранены все критические), увеличения покрытия тестами на \textbf{36\%} в кодовой базе объемом более 60k LOC, а также реализации API с нагрузкой 10k+ RPS и \textbf{uptime 99.9\%}. Опыт в согласовании архитектуры между командами, наставничестве и модернизации систем с глубокими знаниями Go, Kubernetes, gRPC, Kafka и PostgreSQL.
 
 % --- Навыки ---
 \section{Ключевые навыки}
 \cvitem{Языки}{Go, JavaScript (Node.js, AngularJS), ABAP}
 \cvitem{Архитектура}{Clean Architecture, Hexagonal, SOLID, DI; Event-driven и распределённые системы}
-\cvitem{Облако/DevOps}{Kubernetes, Docker, AWS, GCP, ArgoCD, GitHub Actions, CI/CD}
+\cvitem{Облако/DevOps}{Kubernetes, Docker, AWS, GCP, ArgoCD, GitHub Actions, CI/CD, Operator SDK}
 \cvitem{Базы данных}{PostgreSQL, MySQL, MongoDB, Redis; оптимизация запросов, транзакции, пакетная обработка}
 \cvitem{Сообщения/API}{gRPC, Kafka, NATS, REST, OpenAPI 3.0}
-\cvitem{Мониторинг}{Grafana, Loki, Prometheus; инцидент-менеджмент, L3 поддержка}
+\cvitem{Мониторинг}{Grafana, OpenTelemetry, Cribl, SignalFx, Splunk, Loki, Prometheus; инцидент-менеджмент, L3 поддержка}
 
 % --- Опыт работы ---
 \section{Опыт работы}
 
-\cventry{Янв 2025 -- наст. время}{Senior Go Software Engineer}{EPAM}{Астана, Казахстан}{}{
+\cventry{Янв 2025 -- наст. время}{Senior Go Software Engineer}{EPAM}{София, Болгария}{}{
 \begin{itemize}
-  \item Руководил командой из 3 инженеров при модернизации платформы Node/Angular, сократил уязвимости с \textbf{228 (28 критических)} до \textbf{26 (0 критических)}.
-  \item Увеличил автоматическое покрытие тестами на \textbf{10\%} в кодовой базе \textbf{20k+ LOC}.
-  \item Спроектировал и реализовал масштабируемый \textbf{сервис многоуровневых уведомлений} (in-app, email, SMS).
-  \item Создал \textbf{Kubernetes операторов} для стандартизации деплойментов и rollout конфигураций.
-  \item Организовал сессии проектирования между командами для согласования API и архитектурных стандартов.
+  \item Принял ключевое участие в разработке операторного фреймворка для внутреннего использования.
+  \item Улучшил наблюдаемость, упростив технический стек с использованием OpenTelemetry collector и Splunk(+SignalFx).
+  \item Создал \textbf{Kubernetes операторов} для стандартизации деплойментов и rollout конфигураций, сократив ручные операции.
+  \item Руководил командой из 3 инженеров при модернизации платформы на Node/Angular, сократил уязвимости с \textbf{228 (28 критических)} до \textbf{26 (0 критических)}.
+  \item Увеличил автоматическое покрытие тестами на \textbf{36\%} в кодовой базе \textbf{60k+ LOC}.
+  \item Спроектировал и реализовал масштабируемый \textbf{сервис многоканальных уведомлений} (in-app, email, SMS).
+  \item \textbf{Организовал сессии проектирования между командами} для согласования API и архитектурных стандартов.
   \item Наставлял middle-разработчиков, проводил code review и обучал коллег Go и облачным практикам.
 \end{itemize}}
 
