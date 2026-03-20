@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
@@ -19,8 +19,9 @@
 \newfontfamily\cyrillicfonttt{Courier New}
 
 % --- Верстка ---
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.885]{geometry}
 \usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
 
 % --- Личные данные ---
 \name{Нурсултан}{Куандык}
@@ -56,7 +57,7 @@
   \item Улучшил наблюдаемость, упростив технический стек с использованием OpenTelemetry collector и Splunk(+SignalFx).
   \item Создал \textbf{Kubernetes операторов} для стандартизации деплойментов и rollout конфигураций, сократив ручные операции.
   \item Руководил командой из 3 инженеров при модернизации платформы на Node/Angular, сократил уязвимости с \textbf{228 (28 критических)} до \textbf{26 (0 критических)}.
-  \item Увеличил автоматическое покрытие тестами на \textbf{36\%} в кодовой базе \textbf{60k+ LOC}.
+  \item Увеличил покрытие тестами на \textbf{36\%} в кодовой базе из \textbf{60k+ LOC}.
   \item Спроектировал и реализовал масштабируемый \textbf{сервис многоканальных уведомлений} (in-app, email, SMS).
   \item \textbf{Организовал сессии проектирования между командами} для согласования API и архитектурных стандартов.
   \item Наставлял middle-разработчиков, проводил code review и обучал коллег Go и облачным практикам.
@@ -81,6 +82,7 @@
 \begin{itemize}
   \item Разработал backend API и интеграции с внешними системами для крупного нефтегазового клиента.
 \end{itemize}}
+
 % --- Образование ---
 \section{Образование}
 \cventry{2012 -- 2017}{Бакалавр Робототехники и Мехатроники}{Nazarbayev University}{Астана}{}{}
